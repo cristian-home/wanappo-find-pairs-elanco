@@ -98,21 +98,24 @@ onMounted(() => {
     :style="{
       backgroundImage: `url(${Bg3})`,
       backgroundSize: 'cover',
-      backgroundPosition: 'center'
+      backgroundPosition: 'center 75%'
     }"
   >
-    <ElancoLogo
-      class="absolute top-4 right-4 w-32 h-16 "
-      ref="elancoLogoRef"
-    />
+    <ElancoLogo class="absolute top-4 right-4 w-32 h-16" ref="elancoLogoRef" />
     <div
       ref="pageContent"
       class="w-full h-full overflow-x-hidden overflow-y-hidden grid grid-cols-1 grid-rows-[auto_minmax(0,1fr)_auto] justify-items-center align-items-center gap-4 p-4"
-      style="background: #FFFFFF;
-background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 1) 100%);"
+      style="
+        background: #ffffff;
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0) 70%,
+          rgba(255, 255, 255, 1) 100%
+        );
+      "
     >
       <div class="col-start-1 col-end-1 row-start-1 row-end-1 mt-16">
-        <CADLogo class="h-64 w-auto"/>
+        <CADLogo class="h-64 w-auto drop-shadow-xs drop-shadow-white" />
       </div>
       <div
         :leave="{ opacity: 0 }"
@@ -128,7 +131,7 @@ background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 2
         class="w-full col-start-1 col-end-1 row-start-3 row-end-3 flex flex-row justify-center gap-10"
       >
         <div class="max-w-64 w-1/2 relative">
-          <p class="font-bold  text-lg text-center text-indigo" ref="footerParagraphLeft">
+          <p class="font-bold text-lg text-center text-indigo" ref="footerParagraphLeft">
             <span>En </span>
             <span class="text-2xl text-alizarin-crimson">
               {{ useGameStore().startGameCountDown }} segundos
@@ -138,7 +141,7 @@ background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 2
           </p>
         </div>
         <div class="max-w-64 w-1/2 relative">
-          <p class="font-bold  text-lg text-center text-indigo" ref="footerParagraphRight">
+          <p class="font-bold text-lg text-center text-indigo" ref="footerParagraphRight">
             Son
             <span class="text-2xl text-alizarin-crimson"
               >{{ useGameStore().attemptsLimit }} movimientos</span

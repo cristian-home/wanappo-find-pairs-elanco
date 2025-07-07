@@ -92,7 +92,7 @@ const props = defineProps<{ pairCount: number; maxPairs: number }>()
       class="fill-white stroke-black"
       dominant-baseline="middle"
       text-anchor="middle"
-      font-size="15rem"
+      font-size="20rem"
       font-weight="bold"
       stroke-width=".3rem"
     >

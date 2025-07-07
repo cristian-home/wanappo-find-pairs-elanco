@@ -33,11 +33,11 @@ const close = () => {
 <template>
   <div
     v-if="isOpen"
-    class="w-full h-full fixed top-0 left-0 z-30 flex flex-col justify-center items-center"
+    class="w-full h-full fixed p-8 top-0 left-0 z-30 flex flex-col justify-center items-center"
   >
     <div
       v-motion
-      class="w-full h-full fixed top-0 left-0 bg-indigo-600/50"
+      class="w-full h-full fixed top-0 left-0 bg-keppel-600/50"
       :initial="{ opacity: 0 }"
       :enter="{ opacity: 1 }"
       :leave="{ opacity: 0 }"
@@ -45,7 +45,7 @@ const close = () => {
     <div
       ref="target"
       v-motion
-      class="flex flex-col rounded-2xl z-40 shadow-2xl max-w-lg w-full"
+      class="bg-white flex flex-col -skew-x-12! z-40 shadow-2xl max-w-lg w-full"
       :initial="{ opacity: 0, scale: 0 }"
       :enter="{
         opacity: 1,

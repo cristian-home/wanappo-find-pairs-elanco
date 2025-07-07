@@ -14,7 +14,7 @@ import skipFormatting from '@vue/eslint-config-prettier/skip-formatting'
 export default defineConfigWithVueTs(
   {
     name: 'app/files-to-lint',
-    files: ['**/*.{ts,mts,tsx,vue}'],
+    files: ['**/*.{ts,mts,tsx,vue}']
   },
 
   globalIgnores(['**/dist/**', '**/dist-ssr/**', '**/coverage/**']),
@@ -26,19 +26,19 @@ export default defineConfigWithVueTs(
     name: 'app/vue-rules',
     files: ['**/*.vue'],
     rules: {
-      'vue/multi-word-component-names': 'off',
-    },
+      'vue/multi-word-component-names': 'off'
+    }
   },
 
   {
     ...pluginVitest.configs.recommended,
-    files: ['src/**/__tests__/*'],
+    files: ['src/**/__tests__/*']
   },
 
   {
     ...pluginPlaywright.configs['flat/recommended'],
-    files: ['e2e/**/*.{test,spec}.{js,ts,jsx,tsx}'],
+    files: ['e2e/**/*.{test,spec}.{js,ts,jsx,tsx}']
   },
   ...pluginOxlint.configs['flat/recommended'],
-  skipFormatting,
+  skipFormatting
 )

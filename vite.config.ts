@@ -12,15 +12,14 @@ export default defineConfig({
   base: '/find-pairs-game-credelio-wanapo/',
   build: {
     outDir: 'dist',
-    emptyOutDir: true,
+    emptyOutDir: true
   },
   plugins: [
     Icons({ compiler: 'vue3' }),
     vue(),
     vueDevTools(),
     svgLoader({
-      defaultImport: 'component',
-      
+      defaultImport: 'component'
     }),
     VitePWA({
       strategies: 'generateSW',

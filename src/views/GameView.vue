@@ -154,14 +154,12 @@ onMounted(() => {
       backgroundImage: `url(${Bg4})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat' 
+      backgroundRepeat: 'no-repeat'
     }"
     ref="headerRef"
   >
     <div class="h-20 w-full flex flex-row justify-between gap-8 p-0">
-      <div class="w-1/4 flex flex-row justify-start items-center">
-        
-      </div>
+      <div class="w-1/4 flex flex-row justify-start items-center"></div>
       <div class="w-2/4 flex flex-row justify-center items-center grow">
         <PairCounter
           class="scale-125 origin-top max-h-full grow"
