@@ -9,6 +9,10 @@ import { VitePWA } from 'vite-plugin-pwa'
 // https://vitejs.dev/config/
 export default defineConfig({
   base: '/find-pairs-game-credelio-wanapo/',
+  build: {
+    outDir: 'dist',
+    emptyOutDir: true,
+  },
   plugins: [
     Icons({ compiler: 'vue3' }),
     vue(),
@@ -53,10 +57,8 @@ export default defineConfig({
         ]
       }
     }),
-    compression({ algorithm: 'deflate' }),
-    compression({ algorithm: 'gzip' }),
     compression({
-      algorithm: 'brotliCompress',
+      algorithms: ['brotliCompress', 'gzip'],
       deleteOriginalAssets: false
     })
   ],

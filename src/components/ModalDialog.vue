@@ -6,8 +6,8 @@ interface Props {
   isOpen?: boolean
   title?: string
   message?: string
-  onConfirm?: Function
-  onCancel?: Function
+  onConfirm?: () => void
+  onCancel?: () => void
   confirmText?: string
   cancelText?: string
 }
