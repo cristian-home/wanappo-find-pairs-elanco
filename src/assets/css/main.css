@@ -1,6 +1,180 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+  --font-sans:
+    VAGRoundedBlackSSK, ui-sans-serif, system-ui, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-serif: ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+  --font-mono:
+    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+    'Courier New', monospace;
+
+  --animate-spin-slow: spin 40s linear infinite;
+  --animate-spin-slow-reverse: spin 40s linear infinite reverse;
+
+  --breakpoint-xs: 480px;
+
+  --color-astronaut-50: #c9cbec;
+  --color-astronaut-100: #babce7;
+  --color-astronaut-200: #9b9fdd;
+  --color-astronaut-300: #7d82d2;
+  --color-astronaut-400: #5f65c8;
+  --color-astronaut-500: #4148bd;
+  --color-astronaut-600: #363d9e;
+  --color-astronaut-700: #2c3180;
+  --color-astronaut-800: #1e2156;
+  --color-astronaut-900: #0f112d;
+  --color-astronaut-950: #080918;
+  --color-astronaut: #2c3180;
+
+  --color-laser-50: #f8f5ee;
+  --color-laser-100: #f2ecdf;
+  --color-laser-200: #e7dbc2;
+  --color-laser-300: #dbcaa4;
+  --color-laser-400: #d0b887;
+  --color-laser-500: #c4a76a;
+  --color-laser-600: #b08e46;
+  --color-laser-700: #886e36;
+  --color-laser-800: #604d26;
+  --color-laser-900: #382d16;
+  --color-laser-950: #231d0e;
+  --color-laser: #c4a76a;
+
+  --color-spring-wood-50: #ffffff;
+  --color-spring-wood-100: #f8f4f1;
+  --color-spring-wood-200: #e5d7cc;
+  --color-spring-wood-300: #d3b9a6;
+  --color-spring-wood-400: #c09c81;
+  --color-spring-wood-500: #ad7e5b;
+  --color-spring-wood-600: #8b6345;
+  --color-spring-wood-700: #664933;
+  --color-spring-wood-800: #402e20;
+  --color-spring-wood-900: #1b130d;
+  --color-spring-wood-950: #080604;
+  --color-spring-wood: #f8f4f1;
+
+  --color-endeavour-50: #a9d5ff;
+  --color-endeavour-100: #95cbff;
+  --color-endeavour-200: #6cb7ff;
+  --color-endeavour-300: #43a3ff;
+  --color-endeavour-400: #1a8fff;
+  --color-endeavour-500: #007bf1;
+  --color-endeavour-600: #0066c8;
+  --color-endeavour-700: #00519f;
+  --color-endeavour-800: #003467;
+  --color-endeavour-900: #00182f;
+  --color-endeavour-950: #000a13;
+  --color-endeavour: #00519f;
+
+  --color-seagull-50: #ffffff;
+  --color-seagull-100: #ffffff;
+  --color-seagull-200: #dceffa;
+  --color-seagull-300: #b9def4;
+  --color-seagull-400: #95ceef;
+  --color-seagull-500: #72bde9;
+  --color-seagull-600: #41a6e1;
+  --color-seagull-700: #208ccb;
+  --color-seagull-800: #186a9b;
+  --color-seagull-900: #11496a;
+  --color-seagull-950: #0d3852;
+  --color-seagull: #72bde9;
+
+  --color-cerulean-50: #a8ecff;
+  --color-cerulean-100: #93e8ff;
+  --color-cerulean-200: #6adfff;
+  --color-cerulean-300: #42d6ff;
+  --color-cerulean-400: #19cdff;
+  --color-cerulean-500: #00bbef;
+  --color-cerulean-600: #008fb7;
+  --color-cerulean-700: #00637f;
+  --color-cerulean-800: #003747;
+  --color-cerulean-900: #000b0f;
+  --color-cerulean-950: #000000;
+  --color-cerulean: #00bbef;
+
+  --color-moon-raker-50: #ffffff;
+  --color-moon-raker-100: #fefeff;
+  --color-moon-raker-200: #edf2fc;
+  --color-moon-raker-300: #dce4f8;
+  --color-moon-raker-400: #cbd7f5;
+  --color-moon-raker-500: #a0b5ed;
+  --color-moon-raker-600: #7593e5;
+  --color-moon-raker-700: #4b71dc;
+  --color-moon-raker-800: #2751cd;
+  --color-moon-raker-900: #1f3fa2;
+  --color-moon-raker-950: #1b368c;
+  --color-moon-raker: #cbd7f5;
+
+  --color-mauvelous-50: #ffffff;
+  --color-mauvelous-100: #ffffff;
+  --color-mauvelous-200: #fef2f7;
+  --color-mauvelous-300: #facde1;
+  --color-mauvelous-400: #f6a8ca;
+  --color-mauvelous-500: #f283b4;
+  --color-mauvelous-600: #ed5095;
+  --color-mauvelous-700: #e71d77;
+  --color-mauvelous-800: #b9135d;
+  --color-mauvelous-900: #860e43;
+  --color-mauvelous-950: #6d0b37;
+  --color-mauvelous: #f283b4;
+
+  --color-light-orchid-50: #ffffff;
+  --color-light-orchid-100: #ffffff;
+  --color-light-orchid-200: #ffffff;
+  --color-light-orchid-300: #f4e1ee;
+  --color-light-orchid-400: #e8c4dd;
+  --color-light-orchid-500: #dda6cc;
+  --color-light-orchid-600: #cd7db5;
+  --color-light-orchid-700: #be559d;
+  --color-light-orchid-800: #9e3c80;
+  --color-light-orchid-900: #762d5f;
+  --color-light-orchid-950: #61254f;
+  --color-light-orchid: #dda6cc;
+
+  --color-ebb-50: #ffffff;
+  --color-ebb-100: #ffffff;
+  --color-ebb-200: #ffffff;
+  --color-ebb-300: #ffffff;
+  --color-ebb-400: #ffffff;
+  --color-ebb-500: #efecea;
+  --color-ebb-600: #d7cfca;
+  --color-ebb-700: #beb2aa;
+  --color-ebb-800: #a6968a;
+  --color-ebb-900: #8d796c;
+  --color-ebb-950: #7d6b5f;
+  --color-ebb: #efecea;
+
+  --color-spring-green-50: #a8ffda;
+  --color-spring-green-100: #93ffd1;
+  --color-spring-green-200: #6affc0;
+  --color-spring-green-300: #42ffaf;
+  --color-spring-green-400: #19ff9e;
+  --color-spring-green-500: #00ef8a;
+  --color-spring-green-600: #00b76a;
+  --color-spring-green-700: #007f49;
+  --color-spring-green-800: #004729;
+  --color-spring-green-900: #000f08;
+  --color-spring-green-950: #000000;
+  --color-spring-green: #00ef8a;
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
 
 @layer base {
   @font-face {
@@ -17,12 +191,14 @@
   }
 
   html {
+    @apply m-0 p-0;
   }
-
+  
   body {
     @apply w-screen h-dvh;
     @apply overflow-x-hidden overflow-y-hidden;
     @apply bg-spring-wood;
+    @apply font-sans;
   }
 
   @keyframes rotate {
@@ -33,10 +209,4 @@
       transform: rotate(360deg);
     }
   }
-}
-
-@layer components {
-}
-
-@layer utilities {
 }

@@ -56,10 +56,10 @@ watch(
 <template>
   <div class="group" ref="tileRef">
     <button
-      class="active:!scale-90 duration-75 !transition-transform cursor-pointer w-20 h-20 xs:w-24 xs:h-24 group-even:bg-endeavour group-odd:bg-cerulean text-cerulean-50 rounded-md overflow-hidden outline outline-[6px] outline-seagull-50 shadow-[0px_5px_10px_8px_rgba(0,_51,_101,_0.75)]"
+      class="active:scale-90! duration-75 transition-transform! cursor-pointer w-20 h-20 xs:w-24 xs:h-24 group-even:bg-endeavour group-odd:bg-cerulean text-cerulean-50 rounded-md overflow-hidden outline-solid outline-[6px] outline-seagull-50 shadow-[0px_5px_10px_8px_rgba(0,51,101,0.75)]"
       :class="{
         'outline-seagull-600': !props.tile.isMatched && props.tile.isRevealed,
-        '!outline-red-400':
+        'outline-red-400!':
           !props.tile.isMatched && props.tile.isRevealed && gameStore.getTilesRevealedCount > 1
       }"
     >

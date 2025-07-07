@@ -174,7 +174,7 @@ onMounted(() => {
     </div>
     <div class="h-20 w-full flex flex-row justify-between gap-2 p-0" ref="footerRef">
       <div class="w-2/3 flex flex-row justify-start items-center">
-        <Badge class="flex-row py-1 translate-x-[3rem]">
+        <Badge class="flex-row py-1 translate-x-12">
           <template #left-icon>
             <img src="@/assets/img/crono.svg" class="w-8 h-8 scale-[3] origin-right" />
           </template>

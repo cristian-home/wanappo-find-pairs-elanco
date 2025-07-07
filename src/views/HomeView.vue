@@ -166,7 +166,7 @@ onMounted(() => {
     />
     <div
       ref="pageContent"
-      class="w-full h-full overflow-x-hidden overflow-y-hidden grid grid-cols-1 grid-rows-[auto_minmax(0,_1fr)_auto] justify-items-center align-items-center gap-4 p-4"
+      class="w-full h-full overflow-x-hidden overflow-y-hidden grid grid-cols-1 grid-rows-[auto_minmax(0,1fr)_auto] justify-items-center align-items-center gap-4 p-4"
     >
       <div class="col-start-1 col-end-1 row-start-1 row-end-1">
         <img src="@/assets/img/winny-logo_600x600.webp" class="max-h-28" ref="winnyLogo" />
