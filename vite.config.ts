@@ -9,7 +9,7 @@ import svgLoader from 'vite-svg-loader'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/find-pairs-game-credelio-wanapo/',
+  base: '/wanappo-find-pairs-elanco/',
   build: {
     outDir: 'dist',
     emptyOutDir: true
@@ -34,7 +34,7 @@ export default defineConfig({
       manifest: {
         name: 'Concéntrese - Credelio',
         short_name: 'Concéntrese',
-        description: 'Pon a prueba tu memoria y diviertete con el juego de Winny',
+        description: 'Pon a prueba tu memoria y diviertete con el juego de encontrar pares.',
         theme_color: '#2C3180',
         icons: [
           {
