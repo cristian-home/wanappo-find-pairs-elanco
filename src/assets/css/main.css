@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-sans:
+    'Fira Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-serif: ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+  --font-mono:
+    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+    monospace;
+
+  --animate-spin-slow: spin 40s linear infinite;
+  --animate-spin-slow-reverse: spin 40s linear infinite reverse;
+
+  --breakpoint-xs: 480px;
+
+  --color-keppel: oklch(68.663% 0.11439 171.89);
+  --color-keppel-50: oklch(89.625% 0.0489 178.58);
+  --color-keppel-100: oklch(87.401% 0.05958 177.45);
+  --color-keppel-200: oklch(82.998% 0.08087 175.77);
+  --color-keppel-300: oklch(78.844% 0.09888 174.68);
+  --color-keppel-400: oklch(74.831% 0.11525 172.7);
+  --color-keppel-500: oklch(68.663% 0.11439 171.89);
+  --color-keppel-600: oklch(56.357% 0.09265 171.81);
+  --color-keppel-700: oklch(43.369% 0.06874 172.83);
+  --color-keppel-800: oklch(29.285% 0.04306 173.18);
+  --color-keppel-900: oklch(13.023% 0.01412 174.8);
+  --color-keppel-950: oklch(0% 0 none);
+
+  --color-alizarin-crimson: oklch(59.638% 0.22664 19.718);
+  --color-alizarin-crimson-50: oklch(86.99% 0.06172 5.8005);
+  --color-alizarin-crimson-100: oklch(82.949% 0.08314 6.7612);
+  --color-alizarin-crimson-200: oklch(75.624% 0.12477 9.1537);
+  --color-alizarin-crimson-300: oklch(68.935% 0.16726 11.149);
+  --color-alizarin-crimson-400: oklch(63.442% 0.20341 14.801);
+  --color-alizarin-crimson-500: oklch(59.638% 0.22664 19.718);
+  --color-alizarin-crimson-600: oklch(50.393% 0.1928 20.17);
+  --color-alizarin-crimson-700: oklch(39.941% 0.15063 19.409);
+  --color-alizarin-crimson-800: oklch(29.096% 0.10512 17.577);
+  --color-alizarin-crimson-900: oklch(16.924% 0.05222 12.167);
+  --color-alizarin-crimson-950: oklch(9.5226% 0.02569 8.5172);
+
+  --color-indigo: oklch(55.476% 0.13296 256.42);
+  --color-indigo-50: oklch(86.776% 0.03809 256.97);
+  --color-indigo-100: oklch(83.231% 0.04854 256.19);
+  --color-indigo-200: oklch(76.223% 0.07084 256.63);
+  --color-indigo-300: oklch(69.109% 0.0932 255.97);
+  --color-indigo-400: oklch(62.162% 0.11688 256.43);
+  --color-indigo-500: oklch(55.476% 0.13296 256.42);
+  --color-indigo-600: oklch(46.293% 0.10811 256.47);
+  --color-indigo-700: oklch(36.633% 0.08171 256.56);
+  --color-indigo-800: oklch(26.297% 0.05292 256.89);
+  --color-indigo-900: oklch(14.814% 0.01967 257.28);
+  --color-indigo-950: oklch(0% 0 none);
+
+  --color-spring-green-50: #a8ffda;
+  --color-spring-green-100: #93ffd1;
+  --color-spring-green-200: #6affc0;
+  --color-spring-green-300: #42ffaf;
+  --color-spring-green-400: #19ff9e;
+  --color-spring-green-500: #00ef8a;
+  --color-spring-green-600: #00b76a;
+  --color-spring-green-700: #007f49;
+  --color-spring-green-800: #004729;
+  --color-spring-green-900: #000f08;
+  --color-spring-green-950: #000000;
+  --color-spring-green: #00ef8a;
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+@layer base {
+  html {
+    @apply m-0 p-0;
+  }
+
+  body {
+    @apply w-screen h-dvh;
+    @apply overflow-x-hidden overflow-y-hidden;
+    @apply bg-white;
+    @apply font-sans;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
