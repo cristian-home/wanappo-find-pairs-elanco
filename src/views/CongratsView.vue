@@ -54,15 +54,15 @@ onMounted(() => {
     ref="pageContent"
     class="p-4 w-full h-dvh overflow-x-hidden overflow-y-hidden grid grid-cols-1 grid-rows-[auto_1fr] justify-items-center align-items-center"
   >
-    <QLogo class="absolute top-2 left-2 w-16 h-16 fill-astronaut" ref="qLogoRef" />
+    <QLogo class="absolute top-2 left-2 w-16 h-16 fill-keppel" ref="qLogoRef" />
     <div class="" ref="logoRef">
       <img src="@/assets/img/winny-logo_600x600.webp" class="max-h-24 mx-3" />
     </div>
     <div class="flex flex-col gap-4 justify-center items-center" ref="congratsRef">
       <img src="@/assets/img/congrats.webp" class="max-h-72 mx-3" alt="" />
       <div class="-mt-1">
-        <p class="text-center text-endeavour">Lograste armar</p>
-        <p class="text-center text-laser text-5xl">{{ gameStore.getPairsFound }} parejas</p>
+        <p class="text-center text-indigo">Lograste armar</p>
+        <p class="text-center text-alizarin-crimson text-5xl">{{ gameStore.getPairsFound }} parejas</p>
       </div>
 
       <Button type="button" @click="newGame">Aceptar</Button>

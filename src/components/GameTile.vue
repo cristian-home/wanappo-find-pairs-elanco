@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import QLogo from '@/components/icons/QLogo.vue'
 import type { Tile } from '@/lib/utils/game-data'
 import { useMotion } from '@vueuse/motion'
 import { computed, ref, watch } from 'vue'
@@ -13,7 +12,6 @@ const gameStore = useGameStore()
 
 const tileRef = ref<HTMLDivElement | null>(null)
 const image = ref<HTMLImageElement | null>(null)
-const qLogoRef = ref<SVGElement | null>(null)
 
 const tileRevealed = computed(() => {
   return props.tile.isRevealed || !gameStore.gameStarted
@@ -56,15 +54,16 @@ watch(
 <template>
   <div class="group" ref="tileRef">
     <button
-      class="active:scale-90! duration-75 transition-transform! cursor-pointer w-20 h-20 xs:w-24 xs:h-24 group-even:bg-endeavour group-odd:bg-cerulean text-cerulean-50 rounded-md overflow-hidden outline-solid outline-[6px] outline-seagull-50 shadow-[0px_5px_10px_8px_rgba(0,51,101,0.75)]"
+      class="active:scale-90! duration-75 transition-transform! cursor-pointer w-20 h-20 xs:w-24 xs:h-24 group-even:bg-indigo group-even:text-indigo-50 group-odd:bg-alizarin-crimson group-odd:text-alizarin-crimson-50 overflow-hidden outline-solid outline-[6px] shadow-[0px_5px_10px_8px_rgba(0,51,101,0.75)]"
       :class="{
-        'outline-seagull-600': !props.tile.isMatched && props.tile.isRevealed,
+        'outline-green-400!': props.tile.isMatched,
+        'outline-indigo-600': !props.tile.isMatched && props.tile.isRevealed,
         'outline-red-400!':
           !props.tile.isMatched && props.tile.isRevealed && gameStore.getTilesRevealedCount > 1
       }"
     >
       <Transition name="fade" mode="out-in">
-        <QLogo v-if="!tileRevealed" class="m-6 fill-seagull-50" ref="qLogoRef" />
+        <span v-if="!tileRevealed" class="text-5xl font-bold italic text-sans m-6">?</span>
         <img v-else :src="props.tile.image" class="w-full h-full" ref="image" />
       </Transition>
     </button>

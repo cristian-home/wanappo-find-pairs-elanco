@@ -3,7 +3,7 @@ import Badge from '@/components/controls/Badge.vue'
 import Button from '@/components/controls/Button.vue'
 import CountDown from '@/components/CountDown.vue'
 import GameBoard from '@/components/GameBoard.vue'
-import QLogo from '@/components/icons/QLogo.vue'
+import ElancoLogo from '@/assets/img/logos/ElancoLogo.svg?skipsvgo'
 import ModalDialog from '@/components/ModalDialog.vue'
 import PairCounter from '@/components/PairCounter.vue'
 import { useGameStore } from '@/stores/game'
@@ -11,6 +11,7 @@ import { invoke, until, useCounter, useIntervalFn } from '@vueuse/core'
 import { useMotion } from '@vueuse/motion'
 import { computed, onMounted, ref, watch } from 'vue'
 import { onBeforeRouteLeave, useRouter } from 'vue-router'
+import Bg4 from '@/assets/img/bg/image4.webp'
 
 const gameStore = useGameStore()
 const router = useRouter()
@@ -96,7 +97,7 @@ onBeforeRouteLeave(async () => {
   }
 
   await await Promise.all([
-    ...animatedElements.map((ref) => {
+    animatedElements.map((ref) => {
       return new Promise((resolve) => {
         useMotion(ref, {
           initial: {
@@ -149,11 +150,17 @@ onMounted(() => {
 <template>
   <div
     class="h-dvh w-full overflow-x-hidden overflow-y-hidden grid grid-cols-1 grid-rows-[auto_1fr_auto] justify-items-center place-items-center gap-2"
+    :style="{
+      backgroundImage: `url(${Bg4})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat' 
+    }"
     ref="headerRef"
   >
     <div class="h-20 w-full flex flex-row justify-between gap-8 p-0">
       <div class="w-1/4 flex flex-row justify-start items-center">
-        <QLogo class="fill-astronaut max-h-full max-w-full w-20 h-20" />
+        
       </div>
       <div class="w-2/4 flex flex-row justify-center items-center grow">
         <PairCounter
@@ -163,7 +170,7 @@ onMounted(() => {
         />
       </div>
       <div class="w-1/4 flex flex-row justify-end items-center">
-        <img src="@/assets/img/winny-logo_600x600.webp" class="max-h-full max-w-full" />
+        <ElancoLogo class="max-h-full max-w-full h-20" />
       </div>
     </div>
     <div
@@ -176,18 +183,17 @@ onMounted(() => {
       <div class="w-2/3 flex flex-row justify-start items-center">
         <Badge class="flex-row py-1 translate-x-12">
           <template #left-icon>
-            <img src="@/assets/img/crono.svg" class="w-8 h-8 scale-[3] origin-right" />
+            <img src="@/assets/img/crono.svg?url" class="-mt-6 w-8 h-8 scale-[3.5] origin-right" />
           </template>
           <div class="flex-col">
-            <div class="text-sm">{{ timeLeft }} segundos</div>
+            <div class="text-md">
+              <span class="text-alizarin-crimson font-bold">{{ timeLeft }}</span> segundos
+            </div>
             <div class="text-sm">
               Intentos {{ gameStore.attempts }} / {{ gameStore.getAttemptsLimit }}
             </div>
           </div>
         </Badge>
-      </div>
-      <div class="w-1/3 flex flex-row justify-end items-center self-end">
-        <img src="@/assets/img/bottom-bear.webp" class="max-h-full max-w-full w-36" />
       </div>
     </div>
   </div>

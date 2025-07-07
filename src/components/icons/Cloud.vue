@@ -3,7 +3,7 @@
 <template>
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    class="fill-spring-wood stroke-white stroke-[1rem]"
+    class="stroke-white stroke-[1rem]"
     viewBox="0 0 424.291 312.031"
   >
     <defs>

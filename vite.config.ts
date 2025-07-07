@@ -5,6 +5,7 @@ import Icons from 'unplugin-icons/vite'
 import vueDevTools from 'vite-plugin-vue-devtools'
 import { compression } from 'vite-plugin-compression2'
 import { VitePWA } from 'vite-plugin-pwa'
+import svgLoader from 'vite-svg-loader'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -17,6 +18,10 @@ export default defineConfig({
     Icons({ compiler: 'vue3' }),
     vue(),
     vueDevTools(),
+    svgLoader({
+      defaultImport: 'component',
+      
+    }),
     VitePWA({
       strategies: 'generateSW',
       registerType: 'autoUpdate',

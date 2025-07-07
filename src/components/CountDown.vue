@@ -17,7 +17,7 @@ const { pause } = useIntervalFn(() => {
 <template>
   <div class="fixed z-10 top-0 left-0 w-full h-full flex flex-col justify-center items-center">
     <Transition name="fade-zoom" mode="out-in">
-      <div :key="secondsLeft" class="text-seagull-50" v-if="secondsLeft">
+      <div :key="secondsLeft" class="" v-if="secondsLeft">
         <span class="text-9xl" style="text-shadow: 0px 5px 10px #000000c7">
           {{ secondsLeft }}
         </span>

@@ -29,27 +29,27 @@ onMounted(() => {})
     class="h-dvh w-full overflow-x-hidden flex flex-col items-center justify-center gap-4 p-4"
   >
     <div class="flex flex-col gap-1 w-full max-w-xl">
-      <label class="text-xl text-endeavour-600">Tiempo de previsualización</label>
+      <label class="text-xl text-indigo-600">Tiempo de previsualización</label>
       <input
-        class="rounded-full border border-endeavour py-4 px-10 text-xl"
+        class="rounded-full border border-indigo py-4 px-10 text-xl"
         type="number"
         name="startGameCountDown"
         :value="gameStore.startGameCountDown"
       />
     </div>
     <div class="flex flex-col gap-1 w-full max-w-xl">
-      <label class="text-xl text-endeavour-600">Tiempo limite de juego</label>
+      <label class="text-xl text-indigo-600">Tiempo limite de juego</label>
       <input
-        class="rounded-full border border-endeavour py-4 px-10 text-xl"
+        class="rounded-full border border-indigo py-4 px-10 text-xl"
         type="number"
         name="timeLimit"
         :value="gameStore.timeLimit"
       />
     </div>
     <div class="flex flex-col gap-1 w-full max-w-xl">
-      <label class="text-xl text-endeavour-600">Limite de intentos</label>
+      <label class="text-xl text-indigo-600">Limite de intentos</label>
       <input
-        class="rounded-full border border-endeavour py-4 px-10 text-xl"
+        class="rounded-full border border-indigo py-4 px-10 text-xl"
         type="number"
         name="attemptsLimit"
         :value="gameStore.attemptsLimit"

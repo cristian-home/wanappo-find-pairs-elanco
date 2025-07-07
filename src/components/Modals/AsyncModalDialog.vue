@@ -20,14 +20,14 @@ withDefaults(defineProps<Props>(), {
   <div class="w-full h-full fixed top-0 left-0 z-30 flex flex-col justify-center items-center">
     <div
       v-motion
-      class="w-full h-full fixed top-0 left-0 bg-endeavour-600/50"
+      class="w-full h-full fixed top-0 left-0 bg-indigo-600/50"
       :initial="{ opacity: 0 }"
       :enter="{ opacity: 1 }"
       :leave="{ opacity: 0 }"
     ></div>
     <div
       v-motion
-      class="flex flex-col bg-seagull-200 rounded-2xl z-40 shadow-2xl max-w-lg w-full"
+      class="flex flex-col rounded-2xl z-40 shadow-2xl max-w-lg w-full"
       :initial="{ opacity: 0, scale: 0 }"
       :enter="{
         opacity: 1,
@@ -37,7 +37,7 @@ withDefaults(defineProps<Props>(), {
       :leave="{ opacity: 0 }"
     >
       <div class="w-full p-6">
-        <h1 class="text-3xl text-endeavour">{{ title }}</h1>
+        <h1 class="text-3xl text-indigo">{{ title }}</h1>
       </div>
       <div class="w-full p-6">
         <p>{{ message }}</p>
