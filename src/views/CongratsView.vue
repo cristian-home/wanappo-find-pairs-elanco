@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Button from '@/components/controls/Button.vue'
 import QLogo from '@/components/icons/QLogo.vue'
-import { canionConfetti } from '@/lib/utils/confetti'
+// import { canionConfetti } from '@/lib/utils/confetti'
 import { useGameStore } from '@/stores/game'
 import { useMotion } from '@vueuse/motion'
 import { onMounted, ref } from 'vue'
@@ -44,7 +44,7 @@ onMounted(() => {
   })
 
   if (gameStore.getPairsFound > 0) {
-    canionConfetti(pageContent.value as HTMLDivElement)
+    // canionConfetti(pageContent.value as HTMLDivElement)
   }
 })
 </script>
