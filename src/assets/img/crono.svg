@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 308.99759 293.45093">
+  <defs>
+    <path id="c" d="M0 1920h1080V0H0Z"/>
+    <path id="k" fill="#fff" d="m0 0-32.896-2.113c-3.206-.206-5.972 2.225-6.178 5.432-.206 3.207 2.226 5.972 5.433 6.178L-.746 11.61c3.207.206 5.972-2.225 6.178-5.432C5.638 2.971 3.207.206 0 0" clip-path="url(#a)"/>
+    <path id="o" fill="#fff" d="M0 0c-3.207-.206-5.972 2.225-6.178 5.432l-1.616 25.156C-8 33.794-5.569 36.56-2.362 36.766c3.207.206 5.972-2.226 6.178-5.433L5.432 6.178C5.638 2.971 3.207.206 0 0" clip-path="url(#b)"/>
+  </defs>
+  <defs>
+    <clipPath id="e" clipPathUnits="userSpaceOnUse">
+      <path d="M56.9228 283.065H288.671V65.0342H56.9228Z" transform="translate(-174.1855 -65.034227)"/>
+    </clipPath>
+    <clipPath id="d" clipPathUnits="userSpaceOnUse">
+      <use xlink:href="#c" transform="matrix(1.33333 0 0 -1.33333 0 2560)"/>
+    </clipPath>
+    <clipPath id="f" clipPathUnits="userSpaceOnUse">
+      <use xlink:href="#c" transform="translate(-172.79421 -226.57898)"/>
+    </clipPath>
+    <clipPath id="g" clipPathUnits="userSpaceOnUse">
+      <use xlink:href="#c" transform="translate(-177.7275 -157.9947)"/>
+    </clipPath>
+    <clipPath id="h" clipPathUnits="userSpaceOnUse">
+      <use xlink:href="#c" transform="translate(-227.60551 -223.25963)"/>
+    </clipPath>
+    <clipPath id="i" clipPathUnits="userSpaceOnUse">
+      <use xlink:href="#c" transform="translate(-174.0531 -175.63568)"/>
+    </clipPath>
+    <clipPath id="j" clipPathUnits="userSpaceOnUse">
+      <use xlink:href="#c" transform="translate(-174.85611 -194.4828)"/>
+    </clipPath>
+    <clipPath id="a" clipPathUnits="userSpaceOnUse">
+      <use xlink:href="#c" transform="translate(-140.4523 -155.35538)"/>
+    </clipPath>
+    <clipPath id="l" clipPathUnits="userSpaceOnUse">
+      <use xlink:href="#c" transform="translate(-181.69281 -88.056002)"/>
+    </clipPath>
+    <clipPath id="m" clipPathUnits="userSpaceOnUse">
+      <use xlink:href="#c" transform="translate(-246.87901 -162.19208)"/>
+    </clipPath>
+    <clipPath id="n" clipPathUnits="userSpaceOnUse">
+      <use xlink:href="#c" transform="translate(-149.593 -255.03638)"/>
+    </clipPath>
+    <clipPath id="b" clipPathUnits="userSpaceOnUse">
+      <use xlink:href="#c" transform="translate(-161.949 -244.17203)"/>
+    </clipPath>
+    <clipPath id="p" clipPathUnits="userSpaceOnUse">
+      <use xlink:href="#c" transform="translate(-179.3643 -245.29081)"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#d)" opacity="1" transform="translate(-75.896973 -2179.8367)">
+    <path fill="#789fcc" d="M0 0c-29.567 0-55.977 11.883-76.371 34.364-17.567 19.365-30.656 46.392-37.852 78.157-6.589 29.09-2.456 53.752 12.285 73.301 25.597 33.944 180.79 39.782 197.93 23.493 18.536-17.612 18.409-44.304 18.275-72.564-.035-7.134-.07-14.511.166-22.043.919-29.362-10.212-57.539-31.342-79.341C61.307 12.891 31.021 0 0 0" clip-path="url(#e)" transform="matrix(1.33333 0 0 -1.33333 232.24733 2473.2877)"/>
+  </g>
+  <path fill="#fff" d="M0 0c-36.125-2.321-63.625-33.597-61.305-69.722 2.321-36.125 33.597-63.627 69.722-61.306 36.125 2.32 63.625 33.598 61.305 69.723C67.401-25.18 36.125 2.321 0 0m9.163-142.639c-42.525-2.731-79.346 29.644-82.078 72.171C-75.647-27.942-43.271 8.878-.746 11.61 41.78 14.342 78.6-18.034 81.332-60.559c2.732-42.527-29.644-79.348-72.169-82.08" clip-path="url(#f)" transform="matrix(1.33333 0 0 -1.33333 154.495297 78.058)"/>
+  <path fill="#fff" d="M0 0c-1.576-.101-3.185.435-4.411 1.616-2.314 2.231-2.382 5.913-.153 8.225l27.947 28.998c2.23 2.316 5.913 2.381 8.225.152 2.314-2.23 2.382-5.913.153-8.225L3.814 1.769C2.766.681 1.396.09 0 0" clip-path="url(#g)" transform="matrix(1.33333 0 0 -1.33333 161.073027 169.5037)"/>
+  <path fill="#fff" d="m0 0 5.418-4.764 3.206 3.646-5.418 4.764zm6.316-18.778c-1.485-.095-3.007.376-4.213 1.437L-12.049-4.895c-2.414 2.122-2.65 5.795-.528 8.208L-1.69 15.697c2.037 2.317 5.892 2.565 8.209.528L20.675 3.778c1.158-1.019 1.866-2.455 1.964-3.995.099-1.54-.418-3.057-1.436-4.216L10.311-16.815c-1.061-1.205-2.51-1.867-3.995-1.963" clip-path="url(#h)" transform="matrix(1.33333 0 0 -1.33333 227.577027 82.4838)"/>
+  <path fill="#fff" d="M0 0c6.914.444 12.879-4.802 13.323-11.717.445-6.916-4.8-12.879-11.714-13.323-6.914-.444-12.878 4.799-13.322 11.715C-12.157-6.411-6.913-.444 0 0" clip-path="url(#i)" transform="matrix(1.33333 0 0 -1.33333 156.173827 145.9824)"/>
+  <path fill="#fff" d="M0 0c-3.207-.206-5.972 2.225-6.178 5.432l-3.108 48.376c-.206 3.207 2.226 5.972 5.433 6.178 3.206.206 5.972-2.225 6.178-5.432L5.432 6.178C5.638 2.971 3.207.206 0 0" clip-path="url(#j)" transform="matrix(1.33333 0 0 -1.33333 157.244497 120.8529)"/>
+  <use xlink:href="#k" clip-path="url(#a)" transform="matrix(1.33333 0 0 -1.33333 111.372757 173.0228)"/>
+  <path fill="#fff" d="M0 0c-3.207-.206-5.972 2.225-6.178 5.432l-2.113 32.896c-.206 3.207 2.225 5.972 5.432 6.178 3.207.206 5.972-2.226 6.178-5.432L5.432 6.178C5.638 2.971 3.207.206 0 0" clip-path="url(#l)" transform="matrix(1.33333 0 0 -1.33333 166.360097 262.7553)"/>
+  <use xlink:href="#k" clip-path="url(#m)" transform="matrix(1.33333 0 0 -1.33333 253.275027 163.9072)"/>
+  <path fill="#fff" d="m0 0 40.636 2.61-.995 15.481L-.994 15.48Zm47.187-8.627-52.246-3.356c-3.207-.206-5.972 2.225-6.178 5.432l-1.741 27.091c-.206 3.206 2.226 5.972 5.433 6.178L44.7 30.074c3.207.206 5.973-2.226 6.178-5.432l1.741-27.091c.206-3.207-2.226-5.972-5.432-6.178" clip-path="url(#n)" transform="matrix(1.33333 0 0 -1.33333 123.560357 40.1148)"/>
+  <use xlink:href="#o" clip-path="url(#b)" transform="matrix(1.33333 0 0 -1.33333 140.035027 54.6006)"/>
+  <use xlink:href="#o" clip-path="url(#p)" transform="matrix(1.33333 0 0 -1.33333 163.255427 53.1089)"/>
+</svg>

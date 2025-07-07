@@ -1,0 +1,49 @@
+<script setup lang="ts">
+const props = defineProps<{ pairCount: number; maxPairs: number }>()
+</script>
+
+<template>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="fill-spring-wood stroke-white stroke-[1rem]"
+    viewBox="0 0 424.291 312.031"
+  >
+    <defs>
+      <clipPath clipPathUnits="userSpaceOnUse" id="a">
+        <path d="M0 1920h1080V0H0Z" transform="translate(-991.01 -142.849)" />
+      </clipPath>
+    </defs>
+
+    <g clip-path="url(#a)" transform="matrix(1.33333 0 0 -1.33333 882.039 206.038)">
+      <path
+        d="M-352.41 31.152c.637 28.87-22.947 55.567-51.648 58.58-11.891 28.627-48.565 42.674-76.536 29.38-8.961.507-15.9 16.816-27.32 19.51-30.002 15.746-70.765 2.576-85.673-27.96-8.169-11.457-1.316-31.151-20.237-29.844-30.645-10.3-47.224-48.292-33.804-77.748 10.2-25.459 39.808-40.764 66.466-34.389 16.188-17.166 44.372-20.657 64.308-8.113 22.021-30.977 68.204-40.326 100.48-20.14 15.982 8.444 25.822 24.778 34.16 39.423 18.174 10.2 30.014 30.431 29.803 51.301z"
+      />
+    </g>
+    <text
+      x="50%"
+      y="35%"
+      class="fill-astronaut stroke-astronaut-50"
+      dominant-baseline="middle"
+      text-anchor="middle"
+      font-size="5rem"
+      stroke-width=".1rem"
+    >
+      Pares
+    </text>
+    <text
+      x="50%"
+      y="60%"
+      alignment-baseline="baseline"
+      class="fill-astronaut stroke-astronaut-50"
+      dominant-baseline="middle"
+      text-anchor="middle"
+      font-size="5rem"
+      stroke-width=".1rem"
+    >
+      <tspan class="fill-laser stroke-laser-50">{{ pairCount }}</tspan>
+      <tspan class="fill-astronaut stroke-astronaut-50">/{{ props.maxPairs }}</tspan>
+    </text>
+  </svg>
+</template>
+
+<style scoped></style>

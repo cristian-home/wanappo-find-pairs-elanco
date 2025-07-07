@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'VAGRoundedBlackSSK';
+    src:
+      local('VAGRoundedBlackSSK Bold'),
+      local('VAGRoundedBlackSSK-Bold'),
+      url('@/assets/fonts/VAGRoundedBlackSSK-Bold.woff2') format('woff2'),
+      url('@/assets/fonts/VAGRoundedBlackSSK-Bold.woff') format('woff'),
+      url('@/assets/fonts/VAGRoundedBlackSSK-Bold.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  html {
+  }
+
+  body {
+    @apply w-screen h-dvh;
+    @apply overflow-x-hidden overflow-y-hidden;
+    @apply bg-spring-wood;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+@layer components {
+}
+
+@layer utilities {
+}
