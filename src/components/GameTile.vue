@@ -64,7 +64,7 @@ watch(
     >
       <Transition name="fade" mode="out-in">
         <span v-if="!tileRevealed" class="text-5xl font-bold italic text-sans m-6">?</span>
-        <img v-else :src="props.tile.image" class="w-full h-full" ref="image" />
+        <img v-else :src="props.tile.image" class="bg-white w-full h-full" ref="image" />
       </Transition>
     </button>
   </div>
