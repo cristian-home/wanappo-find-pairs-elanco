@@ -1,7 +1,7 @@
 import image1 from '@/assets/img/tiles/1.webp'
 import image2 from '@/assets/img/tiles/2.webp'
 import image3 from '@/assets/img/tiles/3.webp'
-import image4 from '@/assets/img/tiles/4.webp'
+// import image4 from '@/assets/img/tiles/4.webp'
 import image5 from '@/assets/img/tiles/5.webp'
 import image6 from '@/assets/img/tiles/6.webp'
 import image7 from '@/assets/img/tiles/7.webp'
@@ -10,6 +10,7 @@ import image9 from '@/assets/img/tiles/9.webp'
 import image10 from '@/assets/img/tiles/10.webp'
 import image11 from '@/assets/img/tiles/11.webp'
 import image12 from '@/assets/img/tiles/12.webp'
+import image13 from '@/assets/img/tiles/13.webp'
 
 export interface RawTile {
   matchValue: number
@@ -59,18 +60,18 @@ export const tilesData: RawTile[] = [
     isRevealed: false,
     isMatched: false
   },
-  {
-    matchValue: 4,
-    image: image4,
-    isRevealed: false,
-    isMatched: false
-  },
-  {
-    matchValue: 4,
-    image: image4,
-    isRevealed: false,
-    isMatched: false
-  },
+  // {
+  //   matchValue: 4,
+  //   image: image4,
+  //   isRevealed: false,
+  //   isMatched: false
+  // },
+  // {
+  //   matchValue: 4,
+  //   image: image4,
+  //   isRevealed: false,
+  //   isMatched: false
+  // },
   {
     matchValue: 5,
     image: image5,
@@ -164,6 +165,18 @@ export const tilesData: RawTile[] = [
   {
     matchValue: 12,
     image: image12,
+    isRevealed: false,
+    isMatched: false
+  },
+  {
+    matchValue: 13,
+    image: image13,
+    isRevealed: false,
+    isMatched: false
+  },
+  {
+    matchValue: 13,
+    image: image13,
     isRevealed: false,
     isMatched: false
   }
