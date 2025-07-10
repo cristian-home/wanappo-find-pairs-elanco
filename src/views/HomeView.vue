@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Button from '@/components/controls/Button.vue'
 import ElancoLogo from '@/assets/img/logos/ElancoLogo.svg?skipsvgo'
-import CADLogo from '@/assets/img/logos/CADLogo.svg?skipsvgo'
+// import CADLogo from '@/assets/img/logos/CADLogo.svg?skipsvgo'
 import { useGameStore } from '@/stores/game'
 import { useMotion } from '@vueuse/motion'
 import { onMounted, ref, type Ref } from 'vue'
@@ -101,7 +101,7 @@ onMounted(() => {
       backgroundPosition: 'center 75%'
     }"
   >
-    <CADLogo class="absolute top-4 right-4 h-16" ref="elancoLogoRef" />
+    <!--<CADLogo class="absolute top-4 right-4 h-16" ref="elancoLogoRef" />-->
     <div
       ref="pageContent"
       class="w-full h-full overflow-x-hidden overflow-y-hidden grid grid-cols-1 grid-rows-[auto_minmax(0,1fr)_auto] justify-items-center align-items-center gap-4 p-4"
